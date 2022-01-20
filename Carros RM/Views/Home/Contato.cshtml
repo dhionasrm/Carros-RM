@@ -8,8 +8,7 @@
 <head>
     <title>ViaCEP Webservice</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <link href="css/bootstrap.css/bootstrap.min.css" rel="stylesheet" media="screen" />
-
+    
     <!-- Adicionando Javascript -->
     <script>
 
@@ -89,29 +88,37 @@
     <!-- Inicio do formulario -->
     <div>
         <form method="get" action=".">
-            <label>
+            <label class="mt-4">
+                Nome:
+                <input name="nome" type="text" id="nome" size="80" />
+            </label><br />
+            <label class="mt-2">
                 Cep:
+
                 <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
                        onblur="pesquisacep(this.value);" />
-            </label><br />
-            <label>
-                Rua:
-                <input name="rua" type="text" id="rua" size="60" />
-            </label><br />
-            <label>
+            </label>
+            <label class="mt-2">
                 Bairro:
                 <input name="bairro" type="text" id="bairro" size="40" />
             </label><br />
+            <label class="mt-2">
+                Rua:
+                <input name="rua" type="text" id="rua" size="60" />
+            </label>
             <label>
+                Número:
+                <input name="numero" type="text" id="numero" size="8" />
+            </label><br />
+            <label class="mt-2">
                 Cidade:
                 <input name="cidade" type="text" id="cidade" size="40" />
-            </label><br />
-            <label>
+            </label>
+            <label class="mt-2">
                 Estado:
                 <input name="uf" type="text" id="uf" size="2" />
-            </label><br />
-
-            <label>
+            </label>
+            <label class="mt-2">
                 IBGE:
                 <input name="ibge" type="text" id="ibge" size="8" />
             </label><br />
