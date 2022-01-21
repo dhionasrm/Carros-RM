@@ -87,42 +87,62 @@
 <body>
     <!-- Inicio do formulario -->
     <div>
-        <form method="get" action=".">
-            <label class="mt-4">
-                Nome:
-                <input name="nome" type="text" id="nome" size="80" />
-            </label><br />
-            <label class="mt-2">
-                Cep:
-
-                <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
-                       onblur="pesquisacep(this.value);" />
-            </label>
-            <label class="mt-2">
-                Bairro:
-                <input name="bairro" type="text" id="bairro" size="40" />
-            </label><br />
-            <label class="mt-2">
-                Rua:
-                <input name="rua" type="text" id="rua" size="60" />
-            </label>
-            <label>
-                Número:
-                <input name="numero" type="text" id="numero" size="8" />
-            </label><br />
+        <form-inline method="get" action=".">
+            <table>
+                <tr>
+                    <td>
+                        <label class="mt-4">
+                            Nome:
+                        </label><br/>
+                        <input name="nome" type="text" id="nome" size="80"/><br/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label class="mt-2">
+                            Cep:
+                        </label>
+                    </td>
+                    <td>
+                        <label class="mt-2">
+                            Rua:                
+                        <label> 
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input name="cep" type="text" id="cep" value="" size="10" maxlength="9" onblur="pesquisacep(this.value);"/>
+                    </td>
+                    <td>
+                        <input name="rua" type="text" id="rua" size="60"/><br/> 
+                    </td>
+                </tr>
+            </table>
+            
+           
+            <div>
+                <label class="mt-2">
+                    Bairro:
+                </label>                
+                </label class="mt-2">
+                    Número:                
+                </label><br/>
+                <input name="bairro" type="text" id="bairro" size="40"/>
+                <input name="numero" type="text" id="numero" size="8"/><br/>
+            </div>
             <label class="mt-2">
                 Cidade:
-                <input name="cidade" type="text" id="cidade" size="40" />
+                <input name="cidade" type="text" id="cidade" size="40"/>
             </label>
             <label class="mt-2" size="30">
                 Estado:
-                <input name="uf" type="text" id="uf" size="2" />
+                <input name="uf" type="text" id="uf" size="2"/>
             </label>
             <label class="mt-2">
                 IBGE:
-                <input name="ibge" type="text" id="ibge" size="8" />
+                <input name="ibge" type="text" id="ibge" size="8"/>
             </label><br />
-        </form>
+        </form-inline>
     </div>
 </body>
 
