@@ -38,6 +38,10 @@ namespace Carros_RM.Controllers
         {
             return View();
         }
+        public IActionResult Localizacao()
+        {
+            return View();
+        }
 
 
 
